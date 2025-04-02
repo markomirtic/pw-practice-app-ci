@@ -1,9 +1,5 @@
 import { test as base } from '@playwright/test'
-<<<<<<< HEAD
-import { PageManager } from '../pw-practice-app/page-objects/pageManager'
-=======
 import { PageManager } from '../pw-practice-app-ci/page-objects/pageManager'
->>>>>>> f24eab2 (change)
 
 export type TestOptions = {
     globalsQaURL: string
