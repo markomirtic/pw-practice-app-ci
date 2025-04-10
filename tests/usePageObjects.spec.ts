@@ -33,3 +33,13 @@ test('parametrized methods @test2',async({page})=>{
     // await pm.onDatepickerPage().selectCommonDatePickerDateFromToday(15)
     // await pm.onDatepickerPage().selectDatepickerWithRangeFromToday(6,15)
 })
+
+test.only('testing with argos ci',{tag: ['@test1']},async({page})=>{
+    const pm = new PageManager(page)
+    await pm.navigateTo().formLayoutsPage()
+    await pm.navigateTo().datepickerPage()
+    // await pm.navigateTo().smartTablePage()
+    // await pm.navigateTo().toastrPage()
+    // await pm.navigateTo().tooltipPage()
+ 
+ })
