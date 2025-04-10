@@ -42,7 +42,7 @@ export default defineConfig<TestOptions>({
     },
     {
       name: 'chromium',
-      use: {...devices['Desktop Chrome']},
+    
     },
 
     // {
@@ -78,7 +78,7 @@ export default defineConfig<TestOptions>({
   webServer:{
     command: 'npm run start',
     url: 'http://localhost:4200/',
-    timeout: 3 * 60 * 1000
+    timeout: 120 * 1000
   }
   
 
